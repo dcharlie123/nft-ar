@@ -29,6 +29,12 @@
 <!-- <script src="./aframe-ar-nft.js"></script> -->
 
 <body style="margin: 0px; overflow: hidden">
+  <a-assets>
+    <a-asset-item
+      id="peridot-combined"
+      src="./temp/peridot-combined-new-2-v1-kfvdwci9hb.glb"
+    ></a-asset-item>
+  </a-assets>
   <!-- minimal loader shown until image descriptors are loaded -->
   <div class="arjs-loader">
     <div>Loading, please wait...</div>
@@ -42,14 +48,14 @@
     <!-- use rawgithack to retrieve the correct url for nft marker (see 'pinball' below) -->
     <a-nft
       type="nft"
-      url="https://dcharlie123.github.io/nft-ar/trex/trex-image/trex"
+      url="https://dcharlie123.github.io/nft-ar/nft-img/p"
       smooth="true"
       smoothCount="10"
       smoothTolerance="0.01"
       smoothThreshold="5"
     >
       <a-entity
-        gltf-model="https://dcharlie123.github.io/nft-ar/trex/scene.gltf"
+        gltf-model="#peridot-combined"
         scale="5 5 5"
         position="150 300 -100"
       >
